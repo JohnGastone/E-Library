@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Coursepagess extends StatefulWidget {
@@ -10,6 +12,12 @@ class Coursepagess extends StatefulWidget {
 class _CoursepagessState extends State<Coursepagess> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
