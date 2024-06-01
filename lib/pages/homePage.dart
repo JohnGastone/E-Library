@@ -348,11 +348,11 @@ class CourseCard extends StatelessWidget {
           ),
           Text(
             sessions,
-            style: GoogleFonts.mulish(fontSize: 18, color: Colors.orangeAccent),
+            style: GoogleFonts.mulish(fontSize: 18, color: Colors.white),
           ),
           Text(
             videos,
-            style: GoogleFonts.mulish(fontSize: 16, color: Colors.orangeAccent),
+            style: GoogleFonts.mulish(fontSize: 16, color: Colors.white),
           ),
         ],
       ),
