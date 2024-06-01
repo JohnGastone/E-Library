@@ -237,7 +237,7 @@ class AvailableCourses extends StatelessWidget {
                         title: "Graphics Design",
                         sessions: "20 Sessions",
                         videos: "10 Videos",
-                        color: Colors.greenAccent,,
+                        color: Colors.greenAccent,
                       ),
                       SizedBox(width: 20),
                       CourseCard(
@@ -245,6 +245,7 @@ class AvailableCourses extends StatelessWidget {
                         title: "UI/UX Design",
                         sessions: "20 Sessions",
                         videos: "5 Videos",
+                        color: Colors.blueAccent,
                       ),
                     ],
                   ),
@@ -256,6 +257,7 @@ class AvailableCourses extends StatelessWidget {
                         title: "Programming",
                         sessions: "30 Sessions",
                         videos: "20 Videos",
+                        color: Colors.amberAccent,
                       ),
                       SizedBox(width: 20),
                       CourseCard(
@@ -263,6 +265,7 @@ class AvailableCourses extends StatelessWidget {
                         title: "Testing",
                         sessions: "10 Sessions",
                         videos: "5 Videos",
+                        color: Colors.redAccent,
                       ),
                     ],
                   ),
@@ -274,6 +277,7 @@ class AvailableCourses extends StatelessWidget {
                         title: "Computing Maths",
                         sessions: "20 Sessions",
                         videos: "10 Videos",
+                        color: Colors.greenAccent,
                       ),
                       SizedBox(width: 20),
                       CourseCard(
@@ -281,6 +285,7 @@ class AvailableCourses extends StatelessWidget {
                         title: "Algorithms",
                         sessions: "30 Sessions",
                         videos: "30 Videos",
+                        color: Colors.blueAccent,
                       ),
                     ],
                   ),
@@ -299,7 +304,7 @@ class CourseCard extends StatelessWidget {
   final String title;
   final String sessions;
   final String videos;
-  final Widget color;
+  final Color color;
 
   const CourseCard({
     super.key,
