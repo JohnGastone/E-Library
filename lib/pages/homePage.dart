@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:elearning/pages/coursePage.dart';
 import 'package:elearning/pages/enrolledCourses.dart';
 import 'package:elearning/pages/studentProfile.dart';
 import 'package:flutter/cupertino.dart';
@@ -342,7 +343,10 @@ class CourseCard extends StatelessWidget {
                 ),
               ),
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Coursepage()));
+            },
           ),
           SizedBox(height: 15),
           Text(
