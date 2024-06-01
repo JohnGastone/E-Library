@@ -327,16 +327,19 @@ class CourseCard extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 10),
-          Container(
-            height: 90,
-            width: 90,
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)),
-            child: CircleAvatar(
-              backgroundColor: color,
-              child: Image.asset(
-                imagePath,
-                height: 50,
-                width: 50,
+          InkWell(
+            child: Container(
+              height: 90,
+              width: 90,
+              decoration:
+                  BoxDecoration(borderRadius: BorderRadius.circular(15)),
+              child: CircleAvatar(
+                backgroundColor: color,
+                child: Image.asset(
+                  imagePath,
+                  height: 50,
+                  width: 50,
+                ),
               ),
             ),
           ),
