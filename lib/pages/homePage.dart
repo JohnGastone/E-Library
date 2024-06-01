@@ -318,18 +318,18 @@ class CourseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 220,
-      width: 150,
-      decoration: BoxDecoration(
-        color: color,
-        borderRadius: BorderRadius.all(Radius.circular(20)),
-      ),
-      child: Column(
-        children: [
-          SizedBox(height: 10),
-          InkWell(
-            child: Container(
+    return InkWell(
+      child: Container(
+        height: 220,
+        width: 150,
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.all(Radius.circular(20)),
+        ),
+        child: Column(
+          children: [
+            SizedBox(height: 10),
+            Container(
               height: 90,
               width: 90,
               decoration:
@@ -343,27 +343,27 @@ class CourseCard extends StatelessWidget {
                 ),
               ),
             ),
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Coursepage()));
-            },
-          ),
-          SizedBox(height: 15),
-          Text(
-            title,
-            style:
-                GoogleFonts.mulish(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-          Text(
-            sessions,
-            style: GoogleFonts.mulish(fontSize: 18, color: Colors.white),
-          ),
-          Text(
-            videos,
-            style: GoogleFonts.mulish(fontSize: 16, color: Colors.white),
-          ),
-        ],
+            SizedBox(height: 15),
+            Text(
+              title,
+              style:
+                  GoogleFonts.mulish(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              sessions,
+              style: GoogleFonts.mulish(fontSize: 18, color: Colors.white),
+            ),
+            Text(
+              videos,
+              style: GoogleFonts.mulish(fontSize: 16, color: Colors.white),
+            ),
+          ],
+        ),
       ),
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => Coursepage()));
+      },
     );
   }
 }
