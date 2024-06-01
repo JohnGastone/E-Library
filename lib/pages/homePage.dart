@@ -237,6 +237,7 @@ class AvailableCourses extends StatelessWidget {
                         title: "Graphics Design",
                         sessions: "20 Sessions",
                         videos: "10 Videos",
+                        color: Colors.greenAccent,,
                       ),
                       SizedBox(width: 20),
                       CourseCard(
@@ -298,6 +299,7 @@ class CourseCard extends StatelessWidget {
   final String title;
   final String sessions;
   final String videos;
+  final Widget color;
 
   const CourseCard({
     super.key,
@@ -305,6 +307,7 @@ class CourseCard extends StatelessWidget {
     required this.title,
     required this.sessions,
     required this.videos,
+    required this.color,
   });
 
   @override
