@@ -342,6 +342,7 @@ class CourseCard extends StatelessWidget {
                 ),
               ),
             ),
+            onTap: () {},
           ),
           SizedBox(height: 15),
           Text(
