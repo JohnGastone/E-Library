@@ -457,7 +457,7 @@ class AvailableCourses extends StatelessWidget {
                         children: [
                           CourseCard(
                             imagePath: "./assets/images/maths.png",
-                            title: "Computing Maths",
+                            title: "Digital Sociology",
                             sessions: "20 Sessions",
                             videos: "10 Videos",
                             color: Colors.greenAccent,
@@ -465,7 +465,7 @@ class AvailableCourses extends StatelessWidget {
                           SizedBox(width: 20),
                           CourseCard(
                             imagePath: "./assets/images/neural.png",
-                            title: "Algorithms",
+                            title: "Humanities",
                             sessions: "30 Sessions",
                             videos: "30 Videos",
                             color: Colors.blueAccent,
