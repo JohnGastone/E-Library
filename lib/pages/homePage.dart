@@ -349,7 +349,7 @@ class AvailableCourses extends StatelessWidget {
                         children: [
                           CourseCard(
                             imagePath: "./assets/images/code.png",
-                            title: "Programming",
+                            title: "Financial Accounting",
                             sessions: "30 Sessions",
                             videos: "20 Videos",
                             color: Colors.amberAccent,
@@ -357,7 +357,7 @@ class AvailableCourses extends StatelessWidget {
                           SizedBox(width: 20),
                           CourseCard(
                             imagePath: "./assets/images/testing.png",
-                            title: "Testing",
+                            title: "Digital Finance",
                             sessions: "10 Sessions",
                             videos: "5 Videos",
                             color: Colors.redAccent,
@@ -369,7 +369,7 @@ class AvailableCourses extends StatelessWidget {
                         children: [
                           CourseCard(
                             imagePath: "./assets/images/maths.png",
-                            title: "Computing Maths",
+                            title: "Business Statistics",
                             sessions: "20 Sessions",
                             videos: "10 Videos",
                             color: Colors.greenAccent,
@@ -377,7 +377,7 @@ class AvailableCourses extends StatelessWidget {
                           SizedBox(width: 20),
                           CourseCard(
                             imagePath: "./assets/images/neural.png",
-                            title: "Algorithms",
+                            title: "Corporate Governance",
                             sessions: "30 Sessions",
                             videos: "30 Videos",
                             color: Colors.blueAccent,
