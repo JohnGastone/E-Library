@@ -393,10 +393,16 @@ class AvailableCourses extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 20, right: 25, top: 30),
-                  child: Text(
-                    "Department of Humanities and Social studies",
-                    style: GoogleFonts.mulish(
-                        fontSize: 30, fontWeight: FontWeight.bold),
+                  child: Card(
+                    color: const Color.fromARGB(255, 138, 156, 165),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Department of Humanity and Social Studies",
+                        style: GoogleFonts.mulish(
+                            fontSize: 27, fontWeight: FontWeight.bold),
+                      ),
+                    ),
                   ),
                 ),
                 SizedBox(height: 20),
