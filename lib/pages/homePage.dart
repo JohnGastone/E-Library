@@ -220,7 +220,7 @@ class AvailableCourses extends StatelessWidget {
           children: [
             Column(children: [
               Padding(
-                padding: const EdgeInsets.only(right: 95, top: 30),
+                padding: const EdgeInsets.only(left: 20, right: 25, top: 30),
                 child: Text(
                   "Department of Computer Science",
                   style: GoogleFonts.mulish(
@@ -379,7 +379,7 @@ class AvailableCourses extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 95, top: 30),
                   child: Text(
-                    "Courses Available",
+                    "Department of Humanities and Social studies",
                     style: GoogleFonts.mulish(
                         fontSize: 30, fontWeight: FontWeight.bold),
                   ),
