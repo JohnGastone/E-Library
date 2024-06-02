@@ -20,20 +20,24 @@ class _CoursepagessState extends State<Coursepage> {
         backgroundColor: Colors.white24,
         title: Row(
           children: [
-            FloatingActionButton(
-                child: Text(
-                  "Go Back",
-                  style: GoogleFonts.spaceMono(fontSize: 15),
-                ),
-                onPressed: () {
-                  Navigator.pop(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => AvailableCourses(
-                                isDarkTheme: false,
-                                onThemeChanged: (value) {},
-                              )));
-                })
+            SizedBox(
+              height: 30,
+              width: 60,
+              child: FloatingActionButton(
+                  child: Text(
+                    "Go Back",
+                    style: GoogleFonts.spaceMono(fontSize: 15),
+                  ),
+                  onPressed: () {
+                    Navigator.pop(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => AvailableCourses(
+                                  isDarkTheme: false,
+                                  onThemeChanged: (value) {},
+                                )));
+                  }),
+            )
           ],
         ),
       ),
