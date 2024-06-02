@@ -218,81 +218,162 @@ class AvailableCourses extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(right: 95, top: 30),
-              child: Text(
-                "Courses Available",
-                style: GoogleFonts.mulish(
-                    fontSize: 30, fontWeight: FontWeight.bold),
+            Column(children: [
+              Padding(
+                padding: const EdgeInsets.only(right: 95, top: 30),
+                child: Text(
+                  "Courses Available",
+                  style: GoogleFonts.mulish(
+                      fontSize: 30, fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-            SizedBox(height: 20),
-            Padding(
-              padding: const EdgeInsets.only(left: 15),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      CourseCard(
-                        imagePath: "./assets/images/vector.png",
-                        title: "Graphics Design",
-                        sessions: "20 Sessions",
-                        videos: "10 Videos",
-                        color: Colors.greenAccent,
-                      ),
-                      SizedBox(width: 20),
-                      CourseCard(
-                        imagePath: "./assets/images/designer.png",
-                        title: "UI/UX Design",
-                        sessions: "20 Sessions",
-                        videos: "5 Videos",
-                        color: Colors.blueAccent,
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      CourseCard(
-                        imagePath: "./assets/images/code.png",
-                        title: "Programming",
-                        sessions: "30 Sessions",
-                        videos: "20 Videos",
-                        color: Colors.amberAccent,
-                      ),
-                      SizedBox(width: 20),
-                      CourseCard(
-                        imagePath: "./assets/images/testing.png",
-                        title: "Testing",
-                        sessions: "10 Sessions",
-                        videos: "5 Videos",
-                        color: Colors.redAccent,
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      CourseCard(
-                        imagePath: "./assets/images/maths.png",
-                        title: "Computing Maths",
-                        sessions: "20 Sessions",
-                        videos: "10 Videos",
-                        color: Colors.greenAccent,
-                      ),
-                      SizedBox(width: 20),
-                      CourseCard(
-                        imagePath: "./assets/images/neural.png",
-                        title: "Algorithms",
-                        sessions: "30 Sessions",
-                        videos: "30 Videos",
-                        color: Colors.blueAccent,
-                      ),
-                    ],
-                  ),
-                ],
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 15),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        CourseCard(
+                          imagePath: "./assets/images/vector.png",
+                          title: "Graphics Design",
+                          sessions: "20 Sessions",
+                          videos: "10 Videos",
+                          color: Colors.greenAccent,
+                        ),
+                        SizedBox(width: 20),
+                        CourseCard(
+                          imagePath: "./assets/images/designer.png",
+                          title: "UI/UX Design",
+                          sessions: "20 Sessions",
+                          videos: "5 Videos",
+                          color: Colors.blueAccent,
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 20),
+                    Row(
+                      children: [
+                        CourseCard(
+                          imagePath: "./assets/images/code.png",
+                          title: "Programming",
+                          sessions: "30 Sessions",
+                          videos: "20 Videos",
+                          color: Colors.amberAccent,
+                        ),
+                        SizedBox(width: 20),
+                        CourseCard(
+                          imagePath: "./assets/images/testing.png",
+                          title: "Testing",
+                          sessions: "10 Sessions",
+                          videos: "5 Videos",
+                          color: Colors.redAccent,
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 20),
+                    Row(
+                      children: [
+                        CourseCard(
+                          imagePath: "./assets/images/maths.png",
+                          title: "Computing Maths",
+                          sessions: "20 Sessions",
+                          videos: "10 Videos",
+                          color: Colors.greenAccent,
+                        ),
+                        SizedBox(width: 20),
+                        CourseCard(
+                          imagePath: "./assets/images/neural.png",
+                          title: "Algorithms",
+                          sessions: "30 Sessions",
+                          videos: "30 Videos",
+                          color: Colors.blueAccent,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            ),
+            ]),
+            Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 95, top: 30),
+                  child: Text(
+                    "Courses Available",
+                    style: GoogleFonts.mulish(
+                        fontSize: 30, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                SizedBox(height: 20),
+                Padding(
+                  padding: const EdgeInsets.only(left: 15),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          CourseCard(
+                            imagePath: "./assets/images/vector.png",
+                            title: "Graphics Design",
+                            sessions: "20 Sessions",
+                            videos: "10 Videos",
+                            color: Colors.greenAccent,
+                          ),
+                          SizedBox(width: 20),
+                          CourseCard(
+                            imagePath: "./assets/images/designer.png",
+                            title: "UI/UX Design",
+                            sessions: "20 Sessions",
+                            videos: "5 Videos",
+                            color: Colors.blueAccent,
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 20),
+                      Row(
+                        children: [
+                          CourseCard(
+                            imagePath: "./assets/images/code.png",
+                            title: "Programming",
+                            sessions: "30 Sessions",
+                            videos: "20 Videos",
+                            color: Colors.amberAccent,
+                          ),
+                          SizedBox(width: 20),
+                          CourseCard(
+                            imagePath: "./assets/images/testing.png",
+                            title: "Testing",
+                            sessions: "10 Sessions",
+                            videos: "5 Videos",
+                            color: Colors.redAccent,
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 20),
+                      Row(
+                        children: [
+                          CourseCard(
+                            imagePath: "./assets/images/maths.png",
+                            title: "Computing Maths",
+                            sessions: "20 Sessions",
+                            videos: "10 Videos",
+                            color: Colors.greenAccent,
+                          ),
+                          SizedBox(width: 20),
+                          CourseCard(
+                            imagePath: "./assets/images/neural.png",
+                            title: "Algorithms",
+                            sessions: "30 Sessions",
+                            videos: "30 Videos",
+                            color: Colors.blueAccent,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
