@@ -414,7 +414,7 @@ class AvailableCourses extends StatelessWidget {
                         children: [
                           CourseCard(
                             imagePath: "./assets/images/vector.png",
-                            title: "Graphics Design",
+                            title: "Public Policy",
                             sessions: "20 Sessions",
                             videos: "10 Videos",
                             color: Colors.greenAccent,
@@ -422,7 +422,7 @@ class AvailableCourses extends StatelessWidget {
                           SizedBox(width: 20),
                           CourseCard(
                             imagePath: "./assets/images/designer.png",
-                            title: "UI/UX Design",
+                            title: "Urban Planning",
                             sessions: "20 Sessions",
                             videos: "5 Videos",
                             color: Colors.blueAccent,
@@ -434,7 +434,7 @@ class AvailableCourses extends StatelessWidget {
                         children: [
                           CourseCard(
                             imagePath: "./assets/images/code.png",
-                            title: "Programming",
+                            title: "Sociology of Work",
                             sessions: "30 Sessions",
                             videos: "20 Videos",
                             color: Colors.amberAccent,
@@ -442,7 +442,7 @@ class AvailableCourses extends StatelessWidget {
                           SizedBox(width: 20),
                           CourseCard(
                             imagePath: "./assets/images/testing.png",
-                            title: "Testing",
+                            title: "Labour Studies",
                             sessions: "10 Sessions",
                             videos: "5 Videos",
                             color: Colors.redAccent,
