@@ -356,7 +356,7 @@ class AvailableCourses extends StatelessWidget {
                           ),
                           SizedBox(width: 20),
                           CourseCard(
-                            imagePath: "./assets/images/testing.png",
+                            imagePath: "./assets/images/digital-wallet.png",
                             title: "Digital Finance",
                             sessions: "10 Sessions",
                             videos: "5 Videos",
@@ -368,7 +368,7 @@ class AvailableCourses extends StatelessWidget {
                       Row(
                         children: [
                           CourseCard(
-                            imagePath: "./assets/images/maths.png",
+                            imagePath: "./assets/images/analytics.png",
                             title: "Business Statistics",
                             sessions: "20 Sessions",
                             videos: "10 Videos",
@@ -376,7 +376,7 @@ class AvailableCourses extends StatelessWidget {
                           ),
                           SizedBox(width: 20),
                           CourseCard(
-                            imagePath: "./assets/images/neural.png",
+                            imagePath: "./assets/images/teamwork.png",
                             title: "Corporate Governance",
                             sessions: "30 Sessions",
                             videos: "30 Videos",
