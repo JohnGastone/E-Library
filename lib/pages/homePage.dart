@@ -348,7 +348,7 @@ class AvailableCourses extends StatelessWidget {
                       Row(
                         children: [
                           CourseCard(
-                            imagePath: "./assets/images/code.png",
+                            imagePath: "./assets/images/accounting.png",
                             title: "Financial Accounting",
                             sessions: "30 Sessions",
                             videos: "20 Videos",
