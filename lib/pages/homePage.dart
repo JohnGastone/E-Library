@@ -389,6 +389,9 @@ class AvailableCourses extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(
+              height: 20,
+            ),
             Column(
               children: [
                 Padding(
