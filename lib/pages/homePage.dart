@@ -298,7 +298,7 @@ class AvailableCourses extends StatelessWidget {
             Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(right: 95, top: 30),
+                  padding: const EdgeInsets.only(left: 20, right: 25, top: 30),
                   child: Text(
                     "Department of Business Studies",
                     style: GoogleFonts.mulish(
