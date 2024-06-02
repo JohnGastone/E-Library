@@ -329,7 +329,7 @@ class AvailableCourses extends StatelessWidget {
                         children: [
                           CourseCard(
                             imagePath: "./assets/images/vector.png",
-                            title: "Graphics Design",
+                            title: "Management Principles",
                             sessions: "20 Sessions",
                             videos: "10 Videos",
                             color: Colors.greenAccent,
@@ -337,7 +337,7 @@ class AvailableCourses extends StatelessWidget {
                           SizedBox(width: 20),
                           CourseCard(
                             imagePath: "./assets/images/designer.png",
-                            title: "UI/UX Design",
+                            title: "Marketing Management",
                             sessions: "20 Sessions",
                             videos: "5 Videos",
                             color: Colors.blueAccent,
