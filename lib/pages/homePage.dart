@@ -221,10 +221,16 @@ class AvailableCourses extends StatelessWidget {
             Column(children: [
               Padding(
                 padding: const EdgeInsets.only(left: 20, right: 25, top: 30),
-                child: Text(
-                  "Department of Computer Science",
-                  style: GoogleFonts.mulish(
-                      fontSize: 30, fontWeight: FontWeight.bold),
+                child: Card(
+                  color: const Color.fromARGB(255, 138, 156, 165),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      "Department of Computer Science",
+                      style: GoogleFonts.mulish(
+                          fontSize: 27, fontWeight: FontWeight.bold),
+                    ),
+                  ),
                 ),
               ),
               SizedBox(height: 20),
@@ -295,14 +301,23 @@ class AvailableCourses extends StatelessWidget {
                 ),
               ),
             ]),
+            SizedBox(
+              height: 30,
+            ),
             Column(
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 20, right: 25, top: 30),
-                  child: Text(
-                    "Department of Business Studies",
-                    style: GoogleFonts.mulish(
-                        fontSize: 30, fontWeight: FontWeight.bold),
+                  child: Card(
+                    color: const Color.fromARGB(255, 138, 156, 165),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Department of Business Studies",
+                        style: GoogleFonts.mulish(
+                            fontSize: 27, fontWeight: FontWeight.bold),
+                      ),
+                    ),
                   ),
                 ),
                 SizedBox(height: 20),
