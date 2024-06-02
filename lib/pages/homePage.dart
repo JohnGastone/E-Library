@@ -328,7 +328,7 @@ class AvailableCourses extends StatelessWidget {
                       Row(
                         children: [
                           CourseCard(
-                            imagePath: "./assets/images/vector.png",
+                            imagePath: "./assets/images/organizing.png",
                             title: "Management Principles",
                             sessions: "20 Sessions",
                             videos: "10 Videos",
@@ -336,7 +336,7 @@ class AvailableCourses extends StatelessWidget {
                           ),
                           SizedBox(width: 20),
                           CourseCard(
-                            imagePath: "./assets/images/designer.png",
+                            imagePath: "./assets/images/location.png",
                             title: "Marketing Management",
                             sessions: "20 Sessions",
                             videos: "5 Videos",
