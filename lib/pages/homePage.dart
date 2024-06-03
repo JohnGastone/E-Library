@@ -8,20 +8,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class HomePage extends StatefulWidget {
-
-  const HomePage(
-      {super.key, });
+  const HomePage({
+    super.key,
+  });
 
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  
-  List <CoursecardModel> displayCsCourses = List.from(CourseCardCsList.displayCsCourses);
-  
+  List<CoursecardModel> displayCsCourses =
+      List.from(CourseCardCsList.displayCsCourses);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,7 +95,6 @@ class _HomePageState extends State<HomePage> {
                                             builder: (context) =>
                                                 StudentProfile()));
                                   }),
-                             
                             ],
                           ),
                         ),
@@ -111,159 +109,87 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Column(children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 20, right: 25, top: 30),
-                child: Card(
-                  color: const Color.fromARGB(255, 138, 156, 165),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Department of Computer Science",
-                      style: GoogleFonts.mulish(
-                          fontSize: 27, fontWeight: FontWeight.bold),
+            Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 20, right: 25, top: 30),
+                  child: Card(
+                    color: const Color.fromARGB(255, 138, 156, 165),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Department of Computer Science",
+                        style: GoogleFonts.mulish(
+                            fontSize: 27, fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              SizedBox(height: 20),
-              GridView.builder(
-                physics: NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                itemCount: displayCsCourses.length,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, mainAxisSpacing: 4), itemBuilder: (context, index) => InkWell(
-      child: Container(
-        height: 220,
-        width: 150,
-        decoration: BoxDecoration(
-          color: color,
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
-        child: Column(
-          children: [
-            SizedBox(height: 10),
-            Container(
-              height: 90,
-              width: 90,
-              decoration:
-                  BoxDecoration(borderRadius: BorderRadius.circular(15)),
-              child: CircleAvatar(
-                backgroundColor: color,
-                child: Image.asset(
-                 displayCsCourses[index].courseImage!,
-                  height: 50,
-                  width: 50,
-                ),
-              ),
-            ),
-            SizedBox(height: 15),
-            Text(
-              displayCsCourses[index].courseName!,
-              style:
-                  GoogleFonts.mulish(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            Text(
-              displayCsCourses[index].courseSessions!,
-              style: GoogleFonts.mulish(fontSize: 18, color: Colors.white),
-            ),
-            Text(
-              displayCsCourses[index].courseSessions!,
-              style: GoogleFonts.mulish(fontSize: 16, color: Colors.white),
-            ),
-          ],
-        ),
-      ),
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Coursepage()));
-      },
-    );)
+                SizedBox(height: 20),
+                GridView.builder(
+                    physics: NeverScrollableScrollPhysics(),
+                    shrinkWrap: true,
+                    itemCount: displayCsCourses.length,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2, mainAxisSpacing: 4),
+                    itemBuilder: (context, index) => InkWell(
+                          child: Container(
+                            height: 220,
+                            width: 150,
+                            decoration: BoxDecoration(
+                              color: color,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20)),
+                            ),
+                            child: Column(
+                              children: [
+                                SizedBox(height: 10),
+                                Container(
+                                  height: 90,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15)),
+                                  child: CircleAvatar(
+                                    backgroundColor: color,
+                                    child: Image.asset(
+                                      displayCsCourses[index].courseImage!,
+                                      height: 50,
+                                      width: 50,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 15),
+                                Text(
+                                  displayCsCourses[index].courseName!,
+                                  style: GoogleFonts.mulish(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  displayCsCourses[index].courseSessions!,
+                                  style: GoogleFonts.mulish(
+                                      fontSize: 18, color: Colors.white),
+                                ),
+                                Text(
+                                  displayCsCourses[index].courseSessions!,
+                                  style: GoogleFonts.mulish(
+                                      fontSize: 16, color: Colors.white),
+                                ),
+                              ],
+                            ),
+                          ),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Coursepage()));
+                          },
+                        ))
               ],
             )
           ],
         ),
       ),
-    );
-  }
-}
-
-class AvailableCourses extends StatelessWidget {
-  final bool isDarkTheme;
-  final ValueChanged<bool> onThemeChanged;
-
-  const AvailableCourses(
-      {super.key, required this.isDarkTheme, required this.onThemeChanged});
-
-  @override
-  Widget build(BuildContext context) {
-    return 
-  }
-}
-
-class CourseCard extends StatelessWidget {
-  final String imagePath;
-  final String title;
-  final String sessions;
-  final String videos;
-  final Color color;
-
-  const CourseCard({
-    super.key,
-    required this.imagePath,
-    required this.title,
-    required this.sessions,
-    required this.videos,
-    required this.color,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      child: Container(
-        height: 220,
-        width: 150,
-        decoration: BoxDecoration(
-          color: color,
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
-        child: Column(
-          children: [
-            SizedBox(height: 10),
-            Container(
-              height: 90,
-              width: 90,
-              decoration:
-                  BoxDecoration(borderRadius: BorderRadius.circular(15)),
-              child: CircleAvatar(
-                backgroundColor: color,
-                child: Image.asset(
-                  imagePath,
-                  height: 50,
-                  width: 50,
-                ),
-              ),
-            ),
-            SizedBox(height: 15),
-            Text(
-              title,
-              style:
-                  GoogleFonts.mulish(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            Text(
-              sessions,
-              style: GoogleFonts.mulish(fontSize: 18, color: Colors.white),
-            ),
-            Text(
-              videos,
-              style: GoogleFonts.mulish(fontSize: 16, color: Colors.white),
-            ),
-          ],
-        ),
-      ),
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Coursepage()));
-      },
     );
   }
 }

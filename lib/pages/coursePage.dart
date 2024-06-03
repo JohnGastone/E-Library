@@ -29,13 +29,8 @@ class _CoursepagessState extends State<Coursepage> {
                     style: GoogleFonts.spaceMono(fontSize: 15),
                   ),
                   onPressed: () {
-                    Navigator.pop(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => AvailableCourses(
-                                  isDarkTheme: false,
-                                  onThemeChanged: (value) {},
-                                )));
+                    Navigator.pop(context,
+                        MaterialPageRoute(builder: (context) => HomePage()));
                   }),
             )
           ],
