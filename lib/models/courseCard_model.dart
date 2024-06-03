@@ -9,16 +9,16 @@ class CoursecardModel {
   String? courseSessions;
   String? courseVideos;
 
-  CoursecardModel(this.courseImage, this.courseName, this.courseSessions,
-      this.courseVideos);
+  CoursecardModel(this.courseColor, this.courseImage, this.courseName,
+      this.courseSessions, this.courseVideos);
 }
 
 class CourseCardCsList {
   static List<CoursecardModel> getCsCourseCards = [
-    CoursecardModel(
-        "assets/images/vector.png", "Course 1", "100 Sessions", "100 Videos"),
-    CoursecardModel(
-        "assets/images/designer.png", "Course 2", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.greenAccent, "assets/images/vector.png", "Course 1",
+        "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/designer.png", "Course 2",
+        "100 Sessions", "100 Videos"),
     CoursecardModel(
         "assets/images/code.png", "Course 3", "100 Sessions", "100 Videos"),
     CoursecardModel(
@@ -34,10 +34,10 @@ class CourseCardCsList {
 
 class CourseCardBsList {
   static List<CoursecardModel> getBsCourseCards = [
-    CoursecardModel("assets/images/organizing.png", "Course 1", "100 Sessions",
-        "100 Videos"),
-    CoursecardModel(
-        "assets/images/location.png", "Course 2", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.greenAccent, "assets/images/organizing.png",
+        "Course 1", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/location.png", "Course 2",
+        "100 Sessions", "100 Videos"),
     CoursecardModel("assets/images/accounting.png", "Course 3", "100 Sessions",
         "100 Videos"),
     CoursecardModel("assets/images/digital-wallet.png", "Course 4",
@@ -53,10 +53,10 @@ class CourseCardBsList {
 
 class CourseCardHsList {
   static List<CoursecardModel> getHsCourseCards = [
-    CoursecardModel("assets/images/public-relations.png", "Course 1",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/urban-planning.png", "Course 2",
-        "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.greenAccent, "assets/images/public-relations.png",
+        "Course 1", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/urban-planning.png",
+        "Course 2", "100 Sessions", "100 Videos"),
     CoursecardModel(
         "assets/images/network.png", "Course 3", "100 Sessions", "100 Videos"),
     CoursecardModel("assets/images/labour-law.png", "Course 4", "100 Sessions",
