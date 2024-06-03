@@ -158,16 +158,16 @@ class _HomePageState extends State<HomePage> {
             ),
             SizedBox(height: 15),
             Text(
-              title,
+              displayCsCourses[index].courseName!,
               style:
                   GoogleFonts.mulish(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             Text(
-              sessions,
+              displayCsCourses[index].courseSessions!,
               style: GoogleFonts.mulish(fontSize: 18, color: Colors.white),
             ),
             Text(
-              videos,
+              displayCsCourses[index].courseSessions!,
               style: GoogleFonts.mulish(fontSize: 16, color: Colors.white),
             ),
           ],
