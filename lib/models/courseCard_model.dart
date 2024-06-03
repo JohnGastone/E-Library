@@ -19,14 +19,14 @@ class CourseCardCsList {
         "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.blueAccent, "assets/images/designer.png", "Course 2",
         "100 Sessions", "100 Videos"),
-    CoursecardModel(
-        "assets/images/code.png", "Course 3", "100 Sessions", "100 Videos"),
-    CoursecardModel(
-        "assets/images/testing.png", "Course 4", "100 Sessions", "100 Videos"),
-    CoursecardModel(
-        "assets/images/maths.png", "Course 3", "100 Sessions", "100 Videos"),
-    CoursecardModel(
-        "assets/images/neural.png", "Course 4", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.amberAccent, "assets/images/code.png", "Course 3",
+        "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.redAccent, "assets/images/testing.png", "Course 4",
+        "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.greenAccent, "assets/images/maths.png", "Course 3",
+        "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/neural.png", "Course 4",
+        "100 Sessions", "100 Videos"),
   ];
 
   static List<CoursecardModel> displayCsCourses = List.from(getCsCourseCards);
@@ -38,14 +38,14 @@ class CourseCardBsList {
         "Course 1", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.blueAccent, "assets/images/location.png", "Course 2",
         "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/accounting.png", "Course 3", "100 Sessions",
-        "100 Videos"),
-    CoursecardModel("assets/images/digital-wallet.png", "Course 4",
+    CoursecardModel(Colors.amberAccent, "assets/images/accounting.png",
+        "Course 3", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.redAccent, "assets/images/digital-wallet.png",
+        "Course 4", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.greenAccent, "assets/images/analytics.png",
+        "Course 3", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/teamwork.png", "Course 4",
         "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/analytics.png", "Course 3", "100 Sessions",
-        "100 Videos"),
-    CoursecardModel(
-        "assets/images/teamwork.png", "Course 4", "100 Sessions", "100 Videos"),
   ];
 
   static List<CoursecardModel> displayBsCourses = List.from(getBsCourseCards);
@@ -57,14 +57,14 @@ class CourseCardHsList {
         "Course 1", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.blueAccent, "assets/images/urban-planning.png",
         "Course 2", "100 Sessions", "100 Videos"),
-    CoursecardModel(
-        "assets/images/network.png", "Course 3", "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/labour-law.png", "Course 4", "100 Sessions",
-        "100 Videos"),
-    CoursecardModel(
-        "assets/images/business.png", "Course 3", "100 Sessions", "100 Videos"),
-    CoursecardModel(
-        "assets/images/help.png", "Course 4", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.amberAccent, "assets/images/network.png", "Course 3",
+        "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.redAccent, "assets/images/labour-law.png",
+        "Course 4", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.greenAccent, "assets/images/business.png",
+        "Course 3", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/help.png", "Course 4",
+        "100 Sessions", "100 Videos"),
   ];
 
   static List<CoursecardModel> displayHsCourses = List.from(getHsCourseCards);
