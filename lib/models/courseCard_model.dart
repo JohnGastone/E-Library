@@ -24,7 +24,7 @@ class CourseCardCsList {
         "100 Sessions", "100 Videos"),
   ];
 
-  static List<CoursecardModel> displayCourses = List.from(getCsCourseCards);
+  static List<CoursecardModel> displayCsCourses = List.from(getCsCourseCards);
 }
 
 class CourseCardBsList {
