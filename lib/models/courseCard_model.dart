@@ -9,7 +9,7 @@ class CoursecardModel {
 }
 
 class CourseCardCsList {
-  static List<CoursecardModel> getCourseCards = [
+  static List<CoursecardModel> getCsCourseCards = [
     CoursecardModel("assets/images/courses/course-1.jpg", "Course 1",
         "100 Sessions", "100 Videos"),
     CoursecardModel("assets/images/courses/course-2.jpg", "Course 2",
@@ -24,7 +24,7 @@ class CourseCardCsList {
         "100 Sessions", "100 Videos"),
   ];
 
-  static List<CoursecardModel> displayCourses = List.from(getCourseCards);
+  static List<CoursecardModel> displayCourses = List.from(getCsCourseCards);
 }
 
 class CourseCardBsList {
