@@ -133,11 +133,13 @@ class _HomePageState extends State<HomePage> {
                       shrinkWrap: true,
                       itemCount: displayCsCourses.length,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2, mainAxisSpacing: 12),
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 12,
+                          crossAxisSpacing: 12),
                       itemBuilder: (context, index) => InkWell(
                             child: Container(
                               height: 220,
-                              width: 110,
+                              width: 80,
                               decoration: BoxDecoration(
                                 color: displayCsCourses[index].courseColor,
                                 borderRadius:
@@ -147,7 +149,7 @@ class _HomePageState extends State<HomePage> {
                                 children: [
                                   SizedBox(height: 10),
                                   Container(
-                                    height: 80,
+                                    height: 76,
                                     width: 80,
                                     decoration: BoxDecoration(
                                         borderRadius:
@@ -155,12 +157,12 @@ class _HomePageState extends State<HomePage> {
                                     child: CircleAvatar(
                                       child: Image.asset(
                                         displayCsCourses[index].courseImage!,
-                                        height: 50,
-                                        width: 50,
+                                        height: 40,
+                                        width: 40,
                                       ),
                                     ),
                                   ),
-                                  SizedBox(height: 15),
+                                  SizedBox(height: 10),
                                   Text(
                                     displayCsCourses[index].courseName!,
                                     style: GoogleFonts.mulish(
