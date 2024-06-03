@@ -17,7 +17,7 @@ class _CoursepagessState extends State<Coursepage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: Colors.white24,
+        backgroundColor: Theme.of(context).primaryColor,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -44,7 +44,19 @@ class _CoursepagessState extends State<Coursepage> {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [],
+          children: [
+            Center(
+              child: Column(
+                children: [
+                  Text(
+                    "Uploaded Materials",
+                    style: GoogleFonts.spaceMono(
+                        fontSize: 22, fontWeight: FontWeight.w800),
+                  )
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );
