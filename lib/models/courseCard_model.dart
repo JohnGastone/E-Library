@@ -39,13 +39,13 @@ class CourseCardBsList {
     CoursecardModel(Colors.blueAccent, "assets/images/location.png", "Course 2",
         "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.amberAccent, "assets/images/accounting.png",
-        "Course 3", "100 Sessions", "100 Videos"),
+        "Financial Accounting", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.redAccent, "assets/images/digital-wallet.png",
-        "Course 4", "100 Sessions", "100 Videos"),
+        "Digital Finance", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.greenAccent, "assets/images/analytics.png",
-        "Course 3", "100 Sessions", "100 Videos"),
+        "Statistics", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.blueAccent, "assets/images/teamwork.png", "Course 4",
-        "100 Sessions", "100 Videos"),
+        "Corporate Finance", "100 Videos"),
   ];
 
   static List<CoursecardModel> displayBsCourses = List.from(getBsCourseCards);
