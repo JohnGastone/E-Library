@@ -7,3 +7,7 @@ class CoursecardModel {
   CoursecardModel(this.courseImage, this.courseName, this.courseSessions,
       this.courseVideos);
 }
+
+class CourseCardList {
+  static List<CoursecardModel> getCourseCards = [];
+}
