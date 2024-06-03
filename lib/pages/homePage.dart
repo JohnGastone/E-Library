@@ -206,7 +206,7 @@ class _HomePageState extends State<HomePage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "Department of Computer Science",
+                        "Department of Business Studies",
                         style: GoogleFonts.mulish(
                             fontSize: 27, fontWeight: FontWeight.bold),
                       ),
@@ -229,7 +229,7 @@ class _HomePageState extends State<HomePage> {
                               height: 220,
                               width: 80,
                               decoration: BoxDecoration(
-                                color: displayCsCourses[index].courseColor,
+                                color: displayBsCourses[index].courseColor,
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)),
                               ),
@@ -244,7 +244,7 @@ class _HomePageState extends State<HomePage> {
                                             BorderRadius.circular(15)),
                                     child: CircleAvatar(
                                       child: Image.asset(
-                                        displayCsCourses[index].courseImage!,
+                                        displayBsCourses[index].courseImage!,
                                         height: 40,
                                         width: 40,
                                       ),
@@ -252,18 +252,18 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   SizedBox(height: 10),
                                   Text(
-                                    displayCsCourses[index].courseName!,
+                                    displayBsCourses[index].courseName!,
                                     style: GoogleFonts.mulish(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Text(
-                                    displayCsCourses[index].courseSessions!,
+                                    displayBsCourses[index].courseSessions!,
                                     style: GoogleFonts.mulish(
                                         fontSize: 18, color: Colors.white),
                                   ),
                                   Text(
-                                    displayCsCourses[index].courseSessions!,
+                                    displayBsCourses[index].courseSessions!,
                                     style: GoogleFonts.mulish(
                                         fontSize: 16, color: Colors.white),
                                   ),
