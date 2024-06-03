@@ -48,6 +48,9 @@ class _CoursepagessState extends State<Coursepage> {
             Center(
               child: Column(
                 children: [
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "Uploaded Materials",
                     style: GoogleFonts.spaceMono(
