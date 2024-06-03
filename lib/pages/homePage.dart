@@ -136,8 +136,8 @@ class _HomePageState extends State<HomePage> {
                           crossAxisCount: 2, mainAxisSpacing: 12),
                       itemBuilder: (context, index) => InkWell(
                             child: Container(
-                              height: 220,
-                              width: 150,
+                              height: 200,
+                              width: 130,
                               decoration: BoxDecoration(
                                 color: displayCsCourses[index].courseColor,
                                 borderRadius:
