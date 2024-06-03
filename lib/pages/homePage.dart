@@ -20,6 +20,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<CoursecardModel> displayCsCourses =
       List.from(CourseCardCsList.displayCsCourses);
+  List<CoursecardModel> displayBsCourses =
+      List.from(CourseCardBsList.displayBsCourses);
 
   @override
   Widget build(BuildContext context) {
