@@ -294,7 +294,7 @@ class _HomePageState extends State<HomePage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "Department of Humanities",
+                        "Department of Humanities and Social Studies",
                         style: GoogleFonts.mulish(
                             fontSize: 27, fontWeight: FontWeight.bold),
                       ),
@@ -367,6 +367,9 @@ class _HomePageState extends State<HomePage> {
                           )),
                 )
               ],
+            ),
+            SizedBox(
+              height: 30,
             )
           ],
         ),
