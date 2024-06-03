@@ -15,10 +15,10 @@ class CoursecardModel {
 
 class CourseCardCsList {
   static List<CoursecardModel> getCsCourseCards = [
-    CoursecardModel(Colors.greenAccent, "assets/images/vector.png", "Course 1",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel(Colors.blueAccent, "assets/images/designer.png", "Course 2",
-        "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.greenAccent, "assets/images/vector.png",
+        "Graphics Design", "20 Sessions", "10 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/designer.png",
+        "UI/UX Design", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.amberAccent, "assets/images/code.png", "Course 3",
         "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.redAccent, "assets/images/testing.png", "Course 4",
