@@ -23,6 +23,8 @@ class CourseCardCsList {
     CoursecardModel("assets/images/courses/course-4.jpg", "Course 4",
         "100 Sessions", "100 Videos"),
   ];
+
+  static List<CoursecardModel> displayCourses = List.from(getCourseCards);
 }
 
 class CourseCardBsList {
