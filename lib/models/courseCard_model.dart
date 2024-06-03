@@ -10,10 +10,10 @@ class CoursecardModel {
 
 class CourseCardCsList {
   static List<CoursecardModel> getCsCourseCards = [
-    CoursecardModel("assets/images/courses/course-1.jpg", "Course 1",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-2.jpg", "Course 2",
-        "100 Sessions", "100 Videos"),
+    CoursecardModel(
+        "assets/images/vector.png", "Course 1", "100 Sessions", "100 Videos"),
+    CoursecardModel(
+        "assets/images/designer.png", "Course 2", "100 Sessions", "100 Videos"),
     CoursecardModel("assets/images/courses/course-3.jpg", "Course 3",
         "100 Sessions", "100 Videos"),
     CoursecardModel("assets/images/courses/course-4.jpg", "Course 4",
