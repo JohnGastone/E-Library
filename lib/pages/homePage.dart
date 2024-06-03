@@ -137,7 +137,7 @@ class _HomePageState extends State<HomePage> {
                             height: 220,
                             width: 150,
                             decoration: BoxDecoration(
-                              color: color,
+                              color: displayCsCourses[index].courseColor,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20)),
                             ),
@@ -150,7 +150,6 @@ class _HomePageState extends State<HomePage> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15)),
                                   child: CircleAvatar(
-                                    backgroundColor: color,
                                     child: Image.asset(
                                       displayCsCourses[index].courseImage!,
                                       height: 50,
