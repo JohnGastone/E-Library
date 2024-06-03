@@ -19,13 +19,13 @@ class CourseCardCsList {
         "Graphics Design", "20 Sessions", "10 Videos"),
     CoursecardModel(Colors.blueAccent, "assets/images/designer.png",
         "UI/UX Design", "100 Sessions", "100 Videos"),
-    CoursecardModel(Colors.amberAccent, "assets/images/code.png", "Course 3",
+    CoursecardModel(Colors.amberAccent, "assets/images/code.png", "Programming",
         "100 Sessions", "100 Videos"),
-    CoursecardModel(Colors.redAccent, "assets/images/testing.png", "Course 4",
+    CoursecardModel(Colors.redAccent, "assets/images/testing.png", "Testing",
         "100 Sessions", "100 Videos"),
-    CoursecardModel(Colors.greenAccent, "assets/images/maths.png", "Course 3",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel(Colors.blueAccent, "assets/images/neural.png", "Course 4",
+    CoursecardModel(Colors.greenAccent, "assets/images/maths.png",
+        "Computing Maths", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/neural.png", "Algorithms",
         "100 Sessions", "100 Videos"),
   ];
 
