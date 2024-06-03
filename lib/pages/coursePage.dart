@@ -22,7 +22,7 @@ class _CoursepagessState extends State<Coursepage> {
           children: [
             SizedBox(
               height: 30,
-              width: 60,
+              width: 80,
               child: FloatingActionButton(
                   child: Text(
                     "Go Back",
