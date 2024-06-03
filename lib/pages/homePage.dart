@@ -126,64 +126,68 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 SizedBox(height: 20),
-                GridView.builder(
-                    physics: NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: displayCsCourses.length,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2, mainAxisSpacing: 4),
-                    itemBuilder: (context, index) => InkWell(
-                          child: Container(
-                            height: 220,
-                            width: 150,
-                            decoration: BoxDecoration(
-                              color: displayCsCourses[index].courseColor,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
-                            ),
-                            child: Column(
-                              children: [
-                                SizedBox(height: 10),
-                                Container(
-                                  height: 90,
-                                  width: 90,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(15)),
-                                  child: CircleAvatar(
-                                    child: Image.asset(
-                                      displayCsCourses[index].courseImage!,
-                                      height: 50,
-                                      width: 50,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: GridView.builder(
+                      physics: NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: displayCsCourses.length,
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2, mainAxisSpacing: 12),
+                      itemBuilder: (context, index) => InkWell(
+                            child: Container(
+                              height: 220,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                color: displayCsCourses[index].courseColor,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              ),
+                              child: Column(
+                                children: [
+                                  SizedBox(height: 10),
+                                  Container(
+                                    height: 90,
+                                    width: 90,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(15)),
+                                    child: CircleAvatar(
+                                      child: Image.asset(
+                                        displayCsCourses[index].courseImage!,
+                                        height: 50,
+                                        width: 50,
+                                      ),
                                     ),
                                   ),
-                                ),
-                                SizedBox(height: 15),
-                                Text(
-                                  displayCsCourses[index].courseName!,
-                                  style: GoogleFonts.mulish(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(
-                                  displayCsCourses[index].courseSessions!,
-                                  style: GoogleFonts.mulish(
-                                      fontSize: 18, color: Colors.white),
-                                ),
-                                Text(
-                                  displayCsCourses[index].courseSessions!,
-                                  style: GoogleFonts.mulish(
-                                      fontSize: 16, color: Colors.white),
-                                ),
-                              ],
+                                  SizedBox(height: 15),
+                                  Text(
+                                    displayCsCourses[index].courseName!,
+                                    style: GoogleFonts.mulish(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    displayCsCourses[index].courseSessions!,
+                                    style: GoogleFonts.mulish(
+                                        fontSize: 18, color: Colors.white),
+                                  ),
+                                  Text(
+                                    displayCsCourses[index].courseSessions!,
+                                    style: GoogleFonts.mulish(
+                                        fontSize: 16, color: Colors.white),
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                          onTap: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => Coursepage()));
-                          },
-                        ))
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Coursepage()));
+                            },
+                          )),
+                )
               ],
             )
           ],
