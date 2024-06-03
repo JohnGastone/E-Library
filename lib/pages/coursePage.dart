@@ -32,6 +32,11 @@ class _CoursepagessState extends State<Coursepage> {
                     Navigator.pop(context,
                         MaterialPageRoute(builder: (context) => HomePage()));
                   }),
+            ),
+            Text(
+              "Corporate Finance",
+              style: GoogleFonts.spaceMono(
+                  fontSize: 20, fontWeight: FontWeight.bold),
             )
           ],
         ),
