@@ -22,6 +22,8 @@ class _HomePageState extends State<HomePage> {
       List.from(CourseCardCsList.displayCsCourses);
   List<CoursecardModel> displayBsCourses =
       List.from(CourseCardBsList.displayBsCourses);
+  List<CoursecardModel> displayHsCourses =
+      List.from(CourseCardHsList.displayHsCourses);
 
   @override
   Widget build(BuildContext context) {
