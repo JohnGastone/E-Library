@@ -56,14 +56,14 @@ class CourseCardHsList {
     CoursecardModel(Colors.greenAccent, "assets/images/public-relations.png",
         "Course 1", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.blueAccent, "assets/images/urban-planning.png",
-        "Course 2", "100 Sessions", "100 Videos"),
+        "Urban Planning", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.amberAccent, "assets/images/network.png", "Course 3",
-        "100 Sessions", "100 Videos"),
+        "Labour Sociology", "100 Videos"),
     CoursecardModel(Colors.redAccent, "assets/images/labour-law.png",
         "Course 4", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.greenAccent, "assets/images/business.png",
         "Course 3", "100 Sessions", "100 Videos"),
-    CoursecardModel(Colors.blueAccent, "assets/images/help.png", "Course 4",
+    CoursecardModel(Colors.blueAccent, "assets/images/help.png", "Humanities",
         "100 Sessions", "100 Videos"),
   ];
 
