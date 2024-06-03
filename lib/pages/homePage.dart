@@ -317,7 +317,7 @@ class _HomePageState extends State<HomePage> {
                               height: 220,
                               width: 80,
                               decoration: BoxDecoration(
-                                color: displayCsCourses[index].courseColor,
+                                color: displayHsCourses[index].courseColor,
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)),
                               ),
@@ -332,7 +332,7 @@ class _HomePageState extends State<HomePage> {
                                             BorderRadius.circular(15)),
                                     child: CircleAvatar(
                                       child: Image.asset(
-                                        displayCsCourses[index].courseImage!,
+                                        displayHsCourses[index].courseImage!,
                                         height: 40,
                                         width: 40,
                                       ),
@@ -340,18 +340,18 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   SizedBox(height: 10),
                                   Text(
-                                    displayCsCourses[index].courseName!,
+                                    displayHsCourses[index].courseName!,
                                     style: GoogleFonts.mulish(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Text(
-                                    displayCsCourses[index].courseSessions!,
+                                    displayHsCourses[index].courseSessions!,
                                     style: GoogleFonts.mulish(
                                         fontSize: 18, color: Colors.white),
                                   ),
                                   Text(
-                                    displayCsCourses[index].courseSessions!,
+                                    displayHsCourses[index].courseSessions!,
                                     style: GoogleFonts.mulish(
                                         fontSize: 16, color: Colors.white),
                                   ),
