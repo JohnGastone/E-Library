@@ -19,6 +19,7 @@ class _CoursepagessState extends State<Coursepage> {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.white24,
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             SizedBox(
               height: 30,
@@ -36,7 +37,7 @@ class _CoursepagessState extends State<Coursepage> {
             Text(
               "Corporate Finance",
               style: GoogleFonts.spaceMono(
-                  fontSize: 20, fontWeight: FontWeight.bold),
+                  fontSize: 25, fontWeight: FontWeight.bold),
             )
           ],
         ),
