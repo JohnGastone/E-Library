@@ -18,15 +18,15 @@ class CourseCardCsList {
     CoursecardModel(Colors.greenAccent, "assets/images/vector.png",
         "Graphics Design", "20 Sessions", "10 Videos"),
     CoursecardModel(Colors.blueAccent, "assets/images/designer.png",
-        "UI/UX Design", "100 Sessions", "100 Videos"),
+        "UI/UX Design", "10 Sessions", "10 Videos"),
     CoursecardModel(Colors.amberAccent, "assets/images/code.png", "Programming",
-        "100 Sessions", "100 Videos"),
+        "30 Sessions", "20 Videos"),
     CoursecardModel(Colors.redAccent, "assets/images/testing.png", "Testing",
-        "100 Sessions", "100 Videos"),
+        "10 Sessions", "10 Videos"),
     CoursecardModel(Colors.greenAccent, "assets/images/maths.png",
-        "Computing Maths", "100 Sessions", "100 Videos"),
+        "Computing Maths", "10 Sessions", "10 Videos"),
     CoursecardModel(Colors.blueAccent, "assets/images/neural.png", "Algorithms",
-        "100 Sessions", "100 Videos"),
+        "20 Sessions", "15 Videos"),
   ];
 
   static List<CoursecardModel> displayCsCourses = List.from(getCsCourseCards);
