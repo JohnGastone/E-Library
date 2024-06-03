@@ -179,7 +179,7 @@ class _HomePageState extends State<HomePage> {
                                         fontSize: 18, color: Colors.white),
                                   ),
                                   Text(
-                                    displayCsCourses[index].courseSessions!,
+                                    displayCsCourses[index].courseVideos!,
                                     style: GoogleFonts.mulish(
                                         fontSize: 16, color: Colors.white),
                                   ),
@@ -265,7 +265,7 @@ class _HomePageState extends State<HomePage> {
                                         fontSize: 18, color: Colors.white),
                                   ),
                                   Text(
-                                    displayBsCourses[index].courseSessions!,
+                                    displayBsCourses[index].courseVideos!,
                                     style: GoogleFonts.mulish(
                                         fontSize: 16, color: Colors.white),
                                   ),
