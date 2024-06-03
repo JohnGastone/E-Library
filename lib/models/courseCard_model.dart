@@ -28,7 +28,7 @@ class CourseCardCsList {
 }
 
 class CourseCardBsList {
-  static List<CoursecardModel> getCourseCards = [
+  static List<CoursecardModel> getBsCourseCards = [
     CoursecardModel("assets/images/courses/course-1.jpg", "Course 1",
         "100 Sessions", "100 Videos"),
     CoursecardModel("assets/images/courses/course-2.jpg", "Course 2",
@@ -42,10 +42,12 @@ class CourseCardBsList {
     CoursecardModel("assets/images/courses/course-4.jpg", "Course 4",
         "100 Sessions", "100 Videos"),
   ];
+
+  static List<CoursecardModel> displayBsCourses = List.from(getBsCourseCards);
 }
 
 class CourseCardHsList {
-  static List<CoursecardModel> getCourseCards = [
+  static List<CoursecardModel> getHsCourseCards = [
     CoursecardModel("assets/images/courses/course-1.jpg", "Course 1",
         "100 Sessions", "100 Videos"),
     CoursecardModel("assets/images/courses/course-2.jpg", "Course 2",
@@ -59,4 +61,6 @@ class CourseCardHsList {
     CoursecardModel("assets/images/courses/course-4.jpg", "Course 4",
         "100 Sessions", "100 Videos"),
   ];
+
+  static List<CoursecardModel> displayHsCourses = List.from(getHsCourseCards);
 }
