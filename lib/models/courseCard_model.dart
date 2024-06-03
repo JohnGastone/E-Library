@@ -14,14 +14,14 @@ class CourseCardCsList {
         "assets/images/vector.png", "Course 1", "100 Sessions", "100 Videos"),
     CoursecardModel(
         "assets/images/designer.png", "Course 2", "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-3.jpg", "Course 3",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-4.jpg", "Course 4",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-3.jpg", "Course 3",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-4.jpg", "Course 4",
-        "100 Sessions", "100 Videos"),
+    CoursecardModel(
+        "assets/images/code.png", "Course 3", "100 Sessions", "100 Videos"),
+    CoursecardModel(
+        "assets/images/testing.png", "Course 4", "100 Sessions", "100 Videos"),
+    CoursecardModel(
+        "assets/images/maths.png", "Course 3", "100 Sessions", "100 Videos"),
+    CoursecardModel(
+        "assets/images/neural.png", "Course 4", "100 Sessions", "100 Videos"),
   ];
 
   static List<CoursecardModel> displayCsCourses = List.from(getCsCourseCards);
