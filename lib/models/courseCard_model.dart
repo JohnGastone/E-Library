@@ -35,17 +35,17 @@ class CourseCardCsList {
 class CourseCardBsList {
   static List<CoursecardModel> getBsCourseCards = [
     CoursecardModel(Colors.greenAccent, "assets/images/organizing.png",
-        "Course 1", "100 Sessions", "100 Videos"),
-    CoursecardModel(Colors.blueAccent, "assets/images/location.png", "Course 2",
-        "100 Sessions", "100 Videos"),
+        "eCommerce", "100 Sessions", "100 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/location.png",
+        "Business IT", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.amberAccent, "assets/images/accounting.png",
-        "Financial Accounting", "100 Sessions", "100 Videos"),
+        "Accounting", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.redAccent, "assets/images/digital-wallet.png",
         "Digital Finance", "100 Sessions", "100 Videos"),
     CoursecardModel(Colors.greenAccent, "assets/images/analytics.png",
         "Statistics", "100 Sessions", "100 Videos"),
-    CoursecardModel(Colors.blueAccent, "assets/images/teamwork.png", "Course 4",
-        "Corporate Finance", "100 Videos"),
+    CoursecardModel(Colors.blueAccent, "assets/images/teamwork.png",
+        "Corporate Finance", "15 Sessions", "10 Videos"),
   ];
 
   static List<CoursecardModel> displayBsCourses = List.from(getBsCourseCards);
