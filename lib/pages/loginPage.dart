@@ -212,10 +212,7 @@ class _LoginPageState extends State<LoginPage> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => AvailableCourses(
-                                              isDarkTheme: true,
-                                              onThemeChanged: (bool value) {},
-                                            )));
+                                        builder: (context) => HomePage()));
                               },
                             )
                           ],
