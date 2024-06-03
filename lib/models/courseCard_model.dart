@@ -48,18 +48,18 @@ class CourseCardBsList {
 
 class CourseCardHsList {
   static List<CoursecardModel> getHsCourseCards = [
-    CoursecardModel("assets/images/courses/course-1.jpg", "Course 1",
+    CoursecardModel("assets/images/public-relations.png", "Course 1",
         "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-2.jpg", "Course 2",
+    CoursecardModel("assets/images/urban-planning.png", "Course 2",
         "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-3.jpg", "Course 3",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-4.jpg", "Course 4",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-3.jpg", "Course 3",
-        "100 Sessions", "100 Videos"),
-    CoursecardModel("assets/images/courses/course-4.jpg", "Course 4",
-        "100 Sessions", "100 Videos"),
+    CoursecardModel(
+        "assets/images/network.png", "Course 3", "100 Sessions", "100 Videos"),
+    CoursecardModel("assets/images/labour-law.png", "Course 4", "100 Sessions",
+        "100 Videos"),
+    CoursecardModel(
+        "assets/images/business.png", "Course 3", "100 Sessions", "100 Videos"),
+    CoursecardModel(
+        "assets/images/help.png", "Course 4", "100 Sessions", "100 Videos"),
   ];
 
   static List<CoursecardModel> displayHsCourses = List.from(getHsCourseCards);
