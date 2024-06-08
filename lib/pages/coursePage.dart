@@ -76,6 +76,11 @@ class _CoursepagessState extends State<Coursepage> {
                             "Introduction",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16, fontWeight: FontWeight.w300),
+                          ),
+                          Spacer(),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Icon(Icons.file_download),
                           )
                         ],
                       ),
