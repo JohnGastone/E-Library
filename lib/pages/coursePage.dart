@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:elearning/pages/homePage.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -63,8 +64,21 @@ class _CoursepagessState extends State<Coursepage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         color: const Color.fromARGB(255, 110, 140, 163)),
-                    child: Row(
-                      children: [],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Icon(CupertinoIcons.circle),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            "Introduction",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 16, fontWeight: FontWeight.w300),
+                          )
+                        ],
+                      ),
                     ),
                   )
                 ],
