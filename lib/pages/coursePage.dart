@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:elearning/models/courseModules_model.dart';
 import 'package:elearning/pages/homePage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,9 @@ class Coursepage extends StatefulWidget {
 }
 
 class _CoursepagessState extends State<Coursepage> {
+  List<CoursemodulesModel> displayModules =
+      List.from(CourseModulesList.displayModules);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
