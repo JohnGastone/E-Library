@@ -85,6 +85,35 @@ class _CoursepagessState extends State<Coursepage> {
                         ],
                       ),
                     ),
+                  ),
+                  SizedBox(height: 20),
+                  Container(
+                    height: 50,
+                    width: 300,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: const Color.fromARGB(255, 110, 140, 163)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Icon(CupertinoIcons.circle),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            "Corporate World",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 16, fontWeight: FontWeight.w300),
+                          ),
+                          Spacer(),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Icon(Icons.file_download),
+                          )
+                        ],
+                      ),
+                    ),
                   )
                 ],
               ),
