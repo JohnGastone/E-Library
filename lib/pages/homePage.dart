@@ -114,22 +114,30 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             Padding(
-              padding:
-                  EdgeInsets.only(top: 20, bottom: 30, left: 20, right: 20),
+              padding: EdgeInsets.only(top: 20, left: 20, right: 20),
               child: Container(
                 width: 250,
                 height: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.grey),
-                child: TextField(
-                  decoration: InputDecoration(
-                      label: Text(
-                        "Browse your course",
-                        style: GoogleFonts.spaceMono(
-                            fontSize: 15, color: Colors.white),
-                      ),
-                      suffixIcon: Icon(CupertinoIcons.search)),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextField(
+                    style: GoogleFonts.spaceMono(
+                        fontSize: 15, color: Colors.white),
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        label: Text(
+                          "Browse your course",
+                          style: GoogleFonts.spaceMono(
+                              fontSize: 15, color: Colors.white),
+                        ),
+                        suffixIcon: Icon(
+                          CupertinoIcons.search,
+                          color: Colors.white,
+                        )),
+                  ),
                 ),
               ),
             ),
