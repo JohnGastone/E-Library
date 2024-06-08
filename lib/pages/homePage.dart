@@ -113,6 +113,17 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            Padding(
+              padding:
+                  EdgeInsets.only(top: 20, bottom: 30, left: 20, right: 20),
+              child: Container(
+                width: 250,
+                height: 40,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.white24),
+              ),
+            ),
             Column(
               children: [
                 Padding(
