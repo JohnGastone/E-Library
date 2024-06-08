@@ -25,6 +25,15 @@ class _HomePageState extends State<HomePage> {
   List<CoursecardModel> displayHsCourses =
       List.from(CourseCardHsList.displayHsCourses);
 
+  void updateList(String value) {
+    setState(() {
+      displayBsCourses = CourseCardBsList.displayBsCourses
+          .where((element) =>
+              element.courseName!.toLowerCase().contains(value.toLowerCase()))
+          .toList();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -116,14 +125,15 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: EdgeInsets.only(top: 20, left: 20, right: 20),
               child: Container(
-                width: 250,
-                height: 40,
+                width: 300,
+                height: 45,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.grey),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
+                    onChanged: (value) => updateList(value),
                     style: GoogleFonts.spaceMono(
                         fontSize: 15, color: Colors.white),
                     decoration: InputDecoration(
@@ -131,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                         label: Text(
                           "Browse your course",
                           style: GoogleFonts.spaceMono(
-                              fontSize: 15, color: Colors.white),
+                              fontSize: 20, color: Colors.white),
                         ),
                         suffixIcon: Icon(
                           CupertinoIcons.search,
