@@ -20,10 +20,10 @@ class CourseModulesList {
     CoursemodulesModel("Mergers Acquisitions"),
     CoursemodulesModel("Financial Statements"),
     CoursemodulesModel("Cost Management"),
-    CoursemodulesModel("POrtfolio Theory"),
+    CoursemodulesModel("Portfolio Theory"),
     CoursemodulesModel("Cash Flow"),
     CoursemodulesModel("Credit Analysis"),
-    CoursemodulesModel("Budgetin Techniques"),
+    CoursemodulesModel("Budgeting Techniques"),
     CoursemodulesModel("Tax Planning"),
     CoursemodulesModel("Economic Environment"),
   ];
