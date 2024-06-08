@@ -121,6 +121,7 @@ class _CoursepagessState extends State<Coursepage> {
                   ),
                   SizedBox(height: 20),
                   ListView.builder(
+                      physics: NeverScrollableScrollPhysics(),
                       scrollDirection: Axis.vertical,
                       itemCount: displayModules.length,
                       itemBuilder: (context, index) => Container(
