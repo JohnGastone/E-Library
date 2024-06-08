@@ -122,6 +122,15 @@ class _HomePageState extends State<HomePage> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.white24),
+                child: TextField(
+                  decoration: InputDecoration(
+                      label: Text(
+                        "Browse your course",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 15, color: Colors.white),
+                      ),
+                      suffixIcon: Icon(CupertinoIcons.search)),
+                ),
               ),
             ),
             Column(
