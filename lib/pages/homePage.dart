@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage> {
                 height: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Colors.white24),
+                    color: Colors.grey),
                 child: TextField(
                   decoration: InputDecoration(
                       label: Text(
