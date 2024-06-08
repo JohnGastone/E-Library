@@ -55,6 +55,13 @@ class _CoursepagessState extends State<Coursepage> {
                     "Uploaded Materials",
                     style: GoogleFonts.spaceMono(
                         fontSize: 22, fontWeight: FontWeight.w800),
+                  ),
+                  SizedBox(height: 20),
+                  Container(
+                    height: 80,
+                    width: 200,
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(15)),
                   )
                 ],
               ),
