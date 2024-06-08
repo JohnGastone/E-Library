@@ -100,6 +100,9 @@ class _CoursepagessState extends State<Coursepage> {
                               ),
                             ),
                           )),
+                  SizedBox(
+                    height: 40,
+                  )
                 ],
               ),
             )
