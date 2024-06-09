@@ -2,22 +2,20 @@
 
 import 'package:elearning/models/courseCard_model.dart';
 import 'package:elearning/pages/coursePage.dart';
-import 'package:elearning/pages/enrolledCourses.dart';
-import 'package:elearning/pages/studentProfile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CsPage extends StatefulWidget {
-  const CsPage({
+class HsPage extends StatefulWidget {
+  const HsPage({
     super.key,
   });
 
   @override
-  State<CsPage> createState() => _CsPageState();
+  State<HsPage> createState() => _HsPageState();
 }
 
-class _CsPageState extends State<CsPage> {
+class _HsPageState extends State<HsPage> {
   List<CoursecardModel> displayHsCourses =
       List.from(CourseCardHsList.displayHsCourses);
 

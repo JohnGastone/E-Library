@@ -1,11 +1,13 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:elearning/pages/bsPage.dart';
 import 'package:elearning/pages/csPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'enrolledCourses.dart';
+import 'hsPage.dart';
 import 'studentProfile.dart';
 
 class Departmentspage extends StatefulWidget {
@@ -153,29 +155,70 @@ class _DepartmentspageState extends State<Departmentspage> {
               SizedBox(
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Card(
-                    color: Colors.white24,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Icon(CupertinoIcons.book_circle),
-                              Text(
-                                "Department of Humanity",
-                                style: GoogleFonts.spaceMono(fontSize: 16),
-                              )
-                            ],
-                          ),
-                          Icon(
-                            CupertinoIcons.device_laptop,
-                            color: Colors.blueGrey,
-                          )
-                        ],
+                  child: InkWell(
+                    child: Card(
+                      color: Colors.white24,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(CupertinoIcons.book_circle),
+                                Text(
+                                  "Department of Humanity",
+                                  style: GoogleFonts.spaceMono(fontSize: 16),
+                                )
+                              ],
+                            ),
+                            Icon(
+                              CupertinoIcons.device_laptop,
+                              color: Colors.blueGrey,
+                            )
+                          ],
+                        ),
                       ),
                     ),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HsPage()));
+                    },
+                  ),
+                ),
+              ),
+              SizedBox(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: InkWell(
+                    child: Card(
+                      color: Colors.white24,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(CupertinoIcons.book_circle),
+                                Text(
+                                  "Department of Business Studies",
+                                  style: GoogleFonts.spaceMono(fontSize: 16),
+                                )
+                              ],
+                            ),
+                            Icon(
+                              CupertinoIcons.device_laptop,
+                              color: Colors.blueGrey,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => BsPage()));
+                    },
                   ),
                 ),
               ),
@@ -194,35 +237,6 @@ class _DepartmentspageState extends State<Departmentspage> {
                               Icon(CupertinoIcons.book_circle),
                               Text(
                                 "Department of Social Studies",
-                                style: GoogleFonts.spaceMono(fontSize: 16),
-                              )
-                            ],
-                          ),
-                          Icon(
-                            CupertinoIcons.device_laptop,
-                            color: Colors.blueGrey,
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Card(
-                    color: Colors.white24,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Icon(CupertinoIcons.book_circle),
-                              Text(
-                                "Department of Business Studies",
                                 style: GoogleFonts.spaceMono(fontSize: 16),
                               )
                             ],
