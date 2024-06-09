@@ -133,9 +133,10 @@ class _DepartmentspageState extends State<Departmentspage> {
                                 )
                               ],
                             ),
-                            Icon(
-                              CupertinoIcons.device_laptop,
-                              color: Colors.blueGrey,
+                            Image.asset(
+                              "./assets/images/computer.png",
+                              height: 30,
+                              width: 30,
                             )
                           ],
                         ),
@@ -243,9 +244,10 @@ class _DepartmentspageState extends State<Departmentspage> {
                               )
                             ],
                           ),
-                          Icon(
-                            CupertinoIcons.device_laptop,
-                            color: Colors.blueGrey,
+                          Image.asset(
+                            "./assets/images/social.png",
+                            height: 30,
+                            width: 30,
                           )
                         ],
                       ),
@@ -272,9 +274,10 @@ class _DepartmentspageState extends State<Departmentspage> {
                               )
                             ],
                           ),
-                          Icon(
-                            CupertinoIcons.device_laptop,
-                            color: Colors.blueGrey,
+                          Image.asset(
+                            "./assets/images/pallete.png",
+                            height: 30,
+                            width: 30,
                           )
                         ],
                       ),
