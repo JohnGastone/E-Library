@@ -18,12 +18,12 @@ class _DepartmentspageState extends State<Departmentspage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                "Choose the Department you want to surf its courses",
-                style: GoogleFonts.spaceMono(fontSize: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 15, right: 15),
+                child: Text(
+                  "Choose the Department you want to surf its courses",
+                  style: GoogleFonts.spaceMono(fontSize: 20),
+                ),
               )
             ],
           ),
