@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:elearning/models/courseCard_model.dart';
-import 'package:elearning/pages/coursePage.dart';
 import 'package:elearning/pages/enrolledCourses.dart';
 import 'package:elearning/pages/moduleUploadPage.dart';
 import 'package:elearning/pages/studentProfile.dart';

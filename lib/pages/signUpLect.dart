@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, prefer_const_constructors
 
 import 'package:elearning/pages/introductionScreen.dart';
-import 'package:elearning/pages/loginPage.dart';
 import 'package:elearning/pages/signInLect.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
