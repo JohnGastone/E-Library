@@ -6,6 +6,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'enrolledCourses.dart';
+import 'studentProfile.dart';
+
 class BsPage extends StatefulWidget {
   const BsPage({
     super.key,
@@ -32,6 +35,87 @@ class _BsPageState extends State<BsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
+        automaticallyImplyLeading: false,
+        title: Row(
+          children: [
+            Image.asset(
+              "./assets/images/idea.png",
+              height: 35,
+              width: 35,
+            ),
+            SizedBox(width: 5),
+            Text(
+              "E-Library",
+              style: GoogleFonts.mulish(color: Colors.white),
+            ),
+            Spacer(),
+            IconButton(
+              icon: Icon(
+                Icons.menu_sharp,
+                color: Colors.orangeAccent,
+              ),
+              onPressed: () {
+                showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: Center(
+                          child: Text(
+                            "Menu",
+                            style: GoogleFonts.mulish(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        content: SizedBox(
+                          height: 200,
+                          child: Column(
+                            children: [
+                              InkWell(
+                                child: ListTile(
+                                  leading: Icon(CupertinoIcons.book),
+                                  title: Text(
+                                    "Enrolled Courses",
+                                    style: GoogleFonts.mulish(
+                                        color: Colors.orangeAccent),
+                                  ),
+                                ),
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              EnrolledCourses()));
+                                },
+                              ),
+                              InkWell(
+                                  child: ListTile(
+                                    leading: Icon(Icons.person),
+                                    title: Text(
+                                      "Profile",
+                                      style: GoogleFonts.mulish(
+                                          color: Colors.orangeAccent),
+                                    ),
+                                  ),
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                StudentProfile()));
+                                  }),
+                            ],
+                          ),
+                        ),
+                        actions: [],
+                      );
+                    });
+              },
+            ),
+          ],
+        ),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
