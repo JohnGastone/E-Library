@@ -133,6 +133,7 @@ class _HomePageState extends State<HomePage> {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
+                    autocorrect: EditableText.debugDeterministicCursor,
                     onChanged: (value) => updateList(value),
                     style: GoogleFonts.spaceMono(
                         fontSize: 15, color: Colors.white),
@@ -141,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                         label: Text(
                           "Browse your courses",
                         ),
-                        labelStyle: GoogleFonts.spaceMono(
+                        floatingLabelStyle: GoogleFonts.spaceMono(
                             fontSize: 20, color: Colors.white),
                         suffixIcon: Icon(
                           CupertinoIcons.search,
