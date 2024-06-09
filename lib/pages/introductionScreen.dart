@@ -40,7 +40,7 @@ class IntroductionScreen extends StatelessWidget {
             height: 35,
           ),
           SizedBox(
-            height: 150,
+            height: 100,
             width: 250,
             child: Container(
                 decoration: BoxDecoration(
@@ -62,12 +62,16 @@ class IntroductionScreen extends StatelessWidget {
                         width: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
                               Text(
                                 "As a Lecturer",
                                 style: GoogleFonts.spaceMono(fontSize: 15),
+                              ),
+                              SizedBox(
+                                width: 10,
                               ),
                               InkWell(
                                 child: CircleAvatar(
@@ -76,20 +80,21 @@ class IntroductionScreen extends StatelessWidget {
                                   child: Icon(Icons.arrow_forward_ios,
                                       color: Colors.white),
                                 ),
-                                onTap: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => LoginPage()));
-                                },
+                                onTap: () {},
                               ),
                             ],
+                          ),
+                          SizedBox(
+                            height: 4,
                           ),
                           Row(
                             children: [
                               Text(
                                 "As a student",
                                 style: GoogleFonts.spaceMono(fontSize: 15),
+                              ),
+                              SizedBox(
+                                width: 15,
                               ),
                               InkWell(
                                 child: CircleAvatar(
