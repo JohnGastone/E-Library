@@ -140,9 +140,9 @@ class _HomePageState extends State<HomePage> {
                         border: InputBorder.none,
                         label: Text(
                           "Browse your course",
-                          style: GoogleFonts.spaceMono(
-                              fontSize: 20, color: Colors.white),
                         ),
+                        labelStyle: GoogleFonts.spaceMono(
+                            fontSize: 20, color: Colors.white),
                         suffixIcon: Icon(
                           CupertinoIcons.search,
                           color: Colors.white,
