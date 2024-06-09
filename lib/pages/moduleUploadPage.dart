@@ -26,10 +26,10 @@ class _ModuleuploadpageState extends State<Moduleuploadpage> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: 15,
+                    height: 45,
                   ),
                   Text(
-                    "Uploaded Materials",
+                    "Upload Resources",
                     style: GoogleFonts.spaceMono(
                         fontSize: 22, fontWeight: FontWeight.w800),
                   ),
