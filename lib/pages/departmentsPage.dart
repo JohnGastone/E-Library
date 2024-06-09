@@ -18,6 +18,9 @@ class _DepartmentspageState extends State<Departmentspage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              SizedBox(
+                height: 20,
+              ),
               Text(
                 "Choose the Department you want to surf its courses",
                 style: GoogleFonts.spaceMono(fontSize: 20),
