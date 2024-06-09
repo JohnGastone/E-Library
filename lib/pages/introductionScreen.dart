@@ -40,7 +40,7 @@ class IntroductionScreen extends StatelessWidget {
             height: 35,
           ),
           SizedBox(
-            height: 50,
+            height: 150,
             width: 250,
             child: Container(
                 decoration: BoxDecoration(
@@ -61,18 +61,53 @@ class IntroductionScreen extends StatelessWidget {
                       SizedBox(
                         width: 20,
                       ),
-                      InkWell(
-                        child: CircleAvatar(
-                          backgroundColor: Color.fromARGB(255, 6, 39, 96),
-                          child: Icon(Icons.arrow_forward_ios,
-                              color: Colors.white),
-                        ),
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => LoginPage()));
-                        },
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "As a Lecturer",
+                                style: GoogleFonts.spaceMono(fontSize: 15),
+                              ),
+                              InkWell(
+                                child: CircleAvatar(
+                                  backgroundColor:
+                                      Color.fromARGB(255, 6, 39, 96),
+                                  child: Icon(Icons.arrow_forward_ios,
+                                      color: Colors.white),
+                                ),
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => LoginPage()));
+                                },
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "As a student",
+                                style: GoogleFonts.spaceMono(fontSize: 15),
+                              ),
+                              InkWell(
+                                child: CircleAvatar(
+                                  backgroundColor:
+                                      Color.fromARGB(255, 6, 39, 96),
+                                  child: Icon(Icons.arrow_forward_ios,
+                                      color: Colors.white),
+                                ),
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => LoginPage()));
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
                       )
                     ],
                   ),
