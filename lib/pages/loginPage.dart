@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, prefer_const_constructors, use_key_in_widget_constructors, library_private_types_in_public_api
 
+import 'package:elearning/pages/departmentsPage.dart';
 import 'package:elearning/pages/homePage.dart';
 import 'package:elearning/pages/signupPage.dart';
 import 'package:flutter/material.dart';
@@ -212,7 +213,8 @@ class _LoginPageState extends State<LoginPage> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => HomePage()));
+                                        builder: (context) =>
+                                            Departmentspage()));
                               },
                             )
                           ],
