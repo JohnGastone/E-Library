@@ -28,10 +28,32 @@ class _ModuleuploadpageState extends State<Moduleuploadpage> {
                   SizedBox(
                     height: 45,
                   ),
-                  Text(
-                    "Upload Resources",
-                    style: GoogleFonts.spaceMono(
-                        fontSize: 22, fontWeight: FontWeight.w800),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15, top: 15),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          height: 40,
+                          width: 70,
+                          child: FloatingActionButton(
+                              child: Text(
+                                "Back",
+                                style: GoogleFonts.spaceMono(fontSize: 15),
+                              ),
+                              onPressed: () {
+                                Navigator.pop(context);
+                              }),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          "Upload Resources",
+                          style: GoogleFonts.spaceMono(
+                              fontSize: 22, fontWeight: FontWeight.w800),
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(height: 20),
                   ListView.builder(
