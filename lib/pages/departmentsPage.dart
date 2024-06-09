@@ -172,9 +172,10 @@ class _DepartmentspageState extends State<Departmentspage> {
                                 )
                               ],
                             ),
-                            Icon(
-                              CupertinoIcons.device_laptop,
-                              color: Colors.blueGrey,
+                            Image.asset(
+                              "./assets/images/help.png",
+                              height: 30,
+                              width: 30,
                             )
                           ],
                         ),
@@ -207,9 +208,10 @@ class _DepartmentspageState extends State<Departmentspage> {
                                 )
                               ],
                             ),
-                            Icon(
-                              CupertinoIcons.device_laptop,
-                              color: Colors.blueGrey,
+                            Image.asset(
+                              "./assets/images/digital-wallet.png",
+                              height: 30,
+                              width: 30,
                             )
                           ],
                         ),
