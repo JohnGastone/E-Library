@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LecturerPrograms extends StatefulWidget {
   const LecturerPrograms({super.key});
@@ -16,7 +17,13 @@ class _LecturerProgramsState extends State<LecturerPrograms> {
       body: Center(
         child: SingleChildScrollView(
           child: Column(
-            children: [],
+            children: [
+              Text(
+                "My Programs",
+                style: GoogleFonts.spaceMono(
+                    fontSize: 20, fontWeight: FontWeight.bold),
+              )
+            ],
           ),
         ),
       ),
