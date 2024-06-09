@@ -165,20 +165,6 @@ class _LecturerProgramsState extends State<LecturerPrograms> {
             ),
             Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 25, top: 30),
-                  child: Card(
-                    color: const Color.fromARGB(255, 138, 156, 165),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        "Department of Computer Science",
-                        style: GoogleFonts.mulish(
-                            fontSize: 27, fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                  ),
-                ),
                 SizedBox(height: 20),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
