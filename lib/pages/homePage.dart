@@ -131,19 +131,16 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.grey),
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(10.0),
                   child: TextField(
                     autocorrect: EditableText.debugDeterministicCursor,
                     onChanged: (value) => updateList(value),
                     style: GoogleFonts.spaceMono(
-                        fontSize: 15, color: Colors.white),
+                        fontSize: 18, color: Colors.white),
                     decoration: InputDecoration(
+                        hintText: "Browse your courses",
+                        hintStyle: GoogleFonts.spaceMono(color: Colors.white),
                         border: InputBorder.none,
-                        label: Text(
-                          "Browse your courses",
-                        ),
-                        floatingLabelStyle: GoogleFonts.spaceMono(
-                            fontSize: 20, color: Colors.white),
                         suffixIcon: Icon(
                           CupertinoIcons.search,
                           color: Colors.white,
