@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../models/courseModules_model.dart';
+import '../models/courseUpload_model.dart';
 
 class Moduleuploadpage extends StatefulWidget {
   const Moduleuploadpage({super.key});
@@ -14,8 +14,8 @@ class Moduleuploadpage extends StatefulWidget {
 }
 
 class _ModuleuploadpageState extends State<Moduleuploadpage> {
-  List<CoursemodulesModel> displayModules =
-      List.from(CourseModulesList.displayModules);
+  List<CoursemodulesUploadModel> displayModules =
+      List.from(CourseModulesUploadList.displayModules);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,7 +65,7 @@ class _ModuleuploadpageState extends State<Moduleuploadpage> {
                                     Spacer(),
                                     Align(
                                       alignment: Alignment.centerRight,
-                                      child: Icon(Icons.file_download),
+                                      child: Icon(Icons.delete),
                                     )
                                   ],
                                 ),
@@ -74,7 +74,8 @@ class _ModuleuploadpageState extends State<Moduleuploadpage> {
                           )),
                   SizedBox(
                     height: 40,
-                  )
+                  ),
+                  FloatingActionButton(onPressed: () {})
                 ],
               ),
             )
