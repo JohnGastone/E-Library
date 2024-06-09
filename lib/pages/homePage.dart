@@ -31,6 +31,14 @@ class _HomePageState extends State<HomePage> {
           .where((element) =>
               element.courseName!.toLowerCase().contains(value.toLowerCase()))
           .toList();
+      displayBsCourses = CourseCardBsList.displayBsCourses
+          .where((element) =>
+              element.courseName!.toLowerCase().contains(value.toLowerCase()))
+          .toList();
+      displayHsCourses = CourseCardHsList.displayHsCourses
+          .where((element) =>
+              element.courseName!.toLowerCase().contains(value.toLowerCase()))
+          .toList();
     });
   }
 
