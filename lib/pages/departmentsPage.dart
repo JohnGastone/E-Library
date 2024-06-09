@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:elearning/pages/homePage.dart';
+import 'package:elearning/pages/csPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -55,7 +55,14 @@ class _DepartmentspageState extends State<Departmentspage> {
                         ),
                       ),
                     ),
-                    onTap: () => HomePage(),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CsPage(),
+                        ),
+                      );
+                    },
                   ),
                 ),
               ),

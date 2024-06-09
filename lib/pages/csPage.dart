@@ -8,16 +8,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({
+class CsPage extends StatefulWidget {
+  const CsPage({
     super.key,
   });
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<CsPage> createState() => _CsPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _CsPageState extends State<CsPage> {
   List<CoursecardModel> displayCsCourses =
       List.from(CourseCardCsList.displayCsCourses);
   List<CoursecardModel> displayBsCourses =

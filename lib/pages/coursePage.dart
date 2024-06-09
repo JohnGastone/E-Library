@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:elearning/models/courseModules_model.dart';
-import 'package:elearning/pages/homePage.dart';
+import 'package:elearning/pages/csPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -36,7 +36,7 @@ class _CoursepagessState extends State<Coursepage> {
                   ),
                   onPressed: () {
                     Navigator.pop(context,
-                        MaterialPageRoute(builder: (context) => HomePage()));
+                        MaterialPageRoute(builder: (context) => CsPage()));
                   }),
             ),
             Text(
