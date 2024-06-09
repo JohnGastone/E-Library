@@ -20,22 +20,10 @@ class CsPage extends StatefulWidget {
 class _CsPageState extends State<CsPage> {
   List<CoursecardModel> displayCsCourses =
       List.from(CourseCardCsList.displayCsCourses);
-  List<CoursecardModel> displayBsCourses =
-      List.from(CourseCardBsList.displayBsCourses);
-  List<CoursecardModel> displayHsCourses =
-      List.from(CourseCardHsList.displayHsCourses);
 
   void updateList(String value) {
     setState(() {
       displayCsCourses = CourseCardCsList.displayCsCourses
-          .where((element) =>
-              element.courseName!.toLowerCase().contains(value.toLowerCase()))
-          .toList();
-      displayBsCourses = CourseCardBsList.displayBsCourses
-          .where((element) =>
-              element.courseName!.toLowerCase().contains(value.toLowerCase()))
-          .toList();
-      displayHsCourses = CourseCardHsList.displayHsCourses
           .where((element) =>
               element.courseName!.toLowerCase().contains(value.toLowerCase()))
           .toList();
