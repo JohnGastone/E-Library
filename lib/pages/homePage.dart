@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
                     decoration: InputDecoration(
                         border: InputBorder.none,
                         label: Text(
-                          "Browse your course",
+                          "Browse your courses",
                         ),
                         labelStyle: GoogleFonts.spaceMono(
                             fontSize: 20, color: Colors.white),
