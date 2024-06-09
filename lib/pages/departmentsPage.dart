@@ -284,7 +284,8 @@ class _DepartmentspageState extends State<Departmentspage> {
                     ),
                   ),
                 ),
-              )
+              ),
+              SizedBox(height: 250)
             ],
           ),
         ),
