@@ -1,6 +1,4 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'dart:ffi';
+// ignore_for_file: prefer_const_constructors, file_names
 
 import 'package:elearning/models/courseCard_model.dart';
 import 'package:elearning/pages/coursePage.dart';
