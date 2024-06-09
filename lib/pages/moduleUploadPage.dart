@@ -75,7 +75,16 @@ class _ModuleuploadpageState extends State<Moduleuploadpage> {
                   SizedBox(
                     height: 40,
                   ),
-                  FloatingActionButton(onPressed: () {})
+                  SizedBox(
+                    height: 40,
+                    width: 140,
+                    child: FloatingActionButton(
+                        child: Text(
+                          "Upload Resource",
+                          style: GoogleFonts.spaceMono(fontSize: 15),
+                        ),
+                        onPressed: () {}),
+                  )
                 ],
               ),
             )
