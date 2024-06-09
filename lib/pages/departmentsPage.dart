@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Departmentspage extends StatefulWidget {
   const Departmentspage({super.key});
@@ -16,7 +17,12 @@ class _DepartmentspageState extends State<Departmentspage> {
       body: Center(
         child: SingleChildScrollView(
           child: Column(
-            children: [],
+            children: [
+              Text(
+                "Choose the Department you want to surf its courses",
+                style: GoogleFonts.spaceMono(fontSize: 20),
+              )
+            ],
           ),
         ),
       ),
