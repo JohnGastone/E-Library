@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:elearning/pages/loginPage.dart';
+import 'package:elearning/pages/signInLect.dart';
 import 'package:flutter/material.dart';
 import "package:google_fonts/google_fonts.dart";
 
@@ -80,7 +81,12 @@ class IntroductionScreen extends StatelessWidget {
                                   child: Icon(Icons.arrow_forward_ios,
                                       color: Colors.white),
                                 ),
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => SignInLect()));
+                                },
                               ),
                             ],
                           ),
