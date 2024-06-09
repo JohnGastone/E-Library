@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:elearning/pages/homePage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -29,29 +30,32 @@ class _DepartmentspageState extends State<Departmentspage> {
               SizedBox(
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Card(
-                    color: Colors.white24,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Icon(CupertinoIcons.book_circle),
-                              Text(
-                                "Department of Computer Studies",
-                                style: GoogleFonts.spaceMono(fontSize: 16),
-                              )
-                            ],
-                          ),
-                          Icon(
-                            CupertinoIcons.device_laptop,
-                            color: Colors.blueGrey,
-                          )
-                        ],
+                  child: InkWell(
+                    child: Card(
+                      color: Colors.white24,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(CupertinoIcons.book_circle),
+                                Text(
+                                  "Department of Computer Studies",
+                                  style: GoogleFonts.spaceMono(fontSize: 16),
+                                )
+                              ],
+                            ),
+                            Icon(
+                              CupertinoIcons.device_laptop,
+                              color: Colors.blueGrey,
+                            )
+                          ],
+                        ),
                       ),
                     ),
+                    onTap: () => HomePage(),
                   ),
                 ),
               ),
