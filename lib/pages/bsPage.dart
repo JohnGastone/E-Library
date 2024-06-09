@@ -129,7 +129,7 @@ class _BsPageState extends State<BsPage> {
                   height: 30,
                   width: 70,
                   child: FloatingActionButton(
-                    onPressed: () => Navigator.pop,
+                    onPressed: () => Navigator.pop(context),
                     child: Text(
                       "Back",
                       style: GoogleFonts.spaceMono(fontSize: 15),
