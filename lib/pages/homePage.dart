@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
 
   void updateList(String value) {
     setState(() {
-      displayBsCourses = CourseCardBsList.displayBsCourses
+      displayCsCourses = CourseCardCsList.displayCsCourses
           .where((element) =>
               element.courseName!.toLowerCase().contains(value.toLowerCase()))
           .toList();
