@@ -54,6 +54,122 @@ class _DepartmentspageState extends State<Departmentspage> {
                     ),
                   ),
                 ),
+              ),
+              SizedBox(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Card(
+                    color: Colors.white24,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(CupertinoIcons.book_circle),
+                              Text(
+                                "Department of Humanity",
+                                style: GoogleFonts.spaceMono(fontSize: 16),
+                              )
+                            ],
+                          ),
+                          Icon(
+                            CupertinoIcons.device_laptop,
+                            color: Colors.blueGrey,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Card(
+                    color: Colors.white24,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(CupertinoIcons.book_circle),
+                              Text(
+                                "Department of Social Studies",
+                                style: GoogleFonts.spaceMono(fontSize: 16),
+                              )
+                            ],
+                          ),
+                          Icon(
+                            CupertinoIcons.device_laptop,
+                            color: Colors.blueGrey,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Card(
+                    color: Colors.white24,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(CupertinoIcons.book_circle),
+                              Text(
+                                "Department of Business Studies",
+                                style: GoogleFonts.spaceMono(fontSize: 16),
+                              )
+                            ],
+                          ),
+                          Icon(
+                            CupertinoIcons.device_laptop,
+                            color: Colors.blueGrey,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Card(
+                    color: Colors.white24,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(CupertinoIcons.book_circle),
+                              Text(
+                                "Department of Fine  Arts",
+                                style: GoogleFonts.spaceMono(fontSize: 16),
+                              )
+                            ],
+                          ),
+                          Icon(
+                            CupertinoIcons.device_laptop,
+                            color: Colors.blueGrey,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
               )
             ],
           ),
