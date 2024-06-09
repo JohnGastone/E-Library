@@ -15,10 +15,17 @@ class IntroductionScreen extends StatelessWidget {
         body: Center(
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Image.asset(
-            "./assets/images/idea.png",
-            height: 90,
-            width: 90,
+          SizedBox(
+            height: 100,
+            width: 100,
+            child: CircleAvatar(
+              child: Image.asset(
+                "./assets/images/home.png",
+                height: double.maxFinite,
+                width: double.maxFinite,
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
           SizedBox(
             height: 10,
