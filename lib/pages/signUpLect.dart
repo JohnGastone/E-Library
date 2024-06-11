@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, prefer_const_constructors, use_key_in_widget_constructors, library_private_types_in_public_api, camel_case_types, file_names
 
-import 'package:elearning/pages/introductionScreen.dart';
 import 'package:elearning/pages/signInLect.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -131,10 +130,11 @@ class _signUpLectState extends State<signUpLect> {
                   width: 250,
                   height: 50,
                   child: TextField(
+                    style: GoogleFonts.mulish(fontSize: 18),
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.person),
-                      hintText: "naheed255@gmail.com",
+                      hintText: "iaalecturer@gmail.com",
                       hintStyle: GoogleFonts.mulish(fontSize: 18),
                       labelStyle: GoogleFonts.mulish(fontSize: 18),
                       border: OutlineInputBorder(
@@ -156,6 +156,8 @@ class _signUpLectState extends State<signUpLect> {
                   width: 250,
                   height: 50,
                   child: TextField(
+                    style:
+                        GoogleFonts.mulish(fontSize: 18, color: Colors.white),
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.lock),
@@ -184,6 +186,8 @@ class _signUpLectState extends State<signUpLect> {
                   width: 250,
                   height: 50,
                   child: TextField(
+                    style:
+                        GoogleFonts.mulish(fontSize: 18, color: Colors.white),
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.lock),
@@ -240,8 +244,7 @@ class _signUpLectState extends State<signUpLect> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) =>
-                                            IntroductionScreen()));
+                                        builder: (context) => SignInLect()));
                               },
                             )
                           ],
