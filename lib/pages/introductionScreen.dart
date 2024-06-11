@@ -16,11 +16,11 @@ class IntroductionScreen extends StatelessWidget {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           SizedBox(
-            height: 100,
-            width: 100,
+            height: 200,
+            width: 200,
             child: CircleAvatar(
               child: Image.asset(
-                "./assets/images/home.png",
+                "./assets/images/iaaa.png",
                 height: double.maxFinite,
                 width: double.maxFinite,
                 fit: BoxFit.cover,
