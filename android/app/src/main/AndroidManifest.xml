@@ -2,7 +2,7 @@
     <application
         android:label="eLibrary"
         android:name="${applicationName}"
-        android:icon="@mipmap/iaa">
+        android:icon="@mipmap/iaaa">
         <activity
             android:name=".MainActivity"
             android:exported="true"
