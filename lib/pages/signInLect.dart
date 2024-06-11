@@ -1,10 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, prefer_const_constructors, use_key_in_widget_constructors, library_private_types_in_public_api
 
-import 'package:elearning/pages/departmentsPage.dart';
-import 'package:elearning/pages/csPage.dart';
 import 'package:elearning/pages/lectPrograms.dart';
 import 'package:elearning/pages/signUpLect.dart';
-import 'package:elearning/pages/signupPage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:math';
@@ -127,7 +124,7 @@ class _SignInLectState extends State<SignInLect> {
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.person),
-                      hintText: "naheed255@gmail.com",
+                      hintText: "iaalecturer@gmail.com",
                       hintStyle: GoogleFonts.mulish(fontSize: 18),
                       labelStyle: GoogleFonts.mulish(fontSize: 18),
                       border: OutlineInputBorder(
