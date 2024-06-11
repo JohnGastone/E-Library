@@ -128,7 +128,7 @@ class _DepartmentspageState extends State<Departmentspage> {
                               children: [
                                 Icon(CupertinoIcons.book_circle),
                                 Text(
-                                  "Department of Computer Studies",
+                                  "Department of Informatics",
                                   style: GoogleFonts.spaceMono(fontSize: 16),
                                 )
                               ],
@@ -204,7 +204,7 @@ class _DepartmentspageState extends State<Departmentspage> {
                               children: [
                                 Icon(CupertinoIcons.book_circle),
                                 Text(
-                                  "Department of Business Studies",
+                                  "Department of Finance Studies",
                                   style: GoogleFonts.spaceMono(fontSize: 16),
                                 )
                               ],
