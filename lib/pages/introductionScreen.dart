@@ -47,7 +47,7 @@ class IntroductionScreen extends StatelessWidget {
           ),
           SizedBox(
             height: 100,
-            width: 250,
+            width: 252,
             child: Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -61,7 +61,7 @@ class IntroductionScreen extends StatelessWidget {
                         width: 5,
                       ),
                       Text(
-                        "Log In",
+                        "Sign In",
                         style: GoogleFonts.mulish(fontSize: 20),
                       ),
                       SizedBox(
