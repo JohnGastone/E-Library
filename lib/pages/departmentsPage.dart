@@ -168,13 +168,13 @@ class _DepartmentspageState extends State<Departmentspage> {
                               children: [
                                 Icon(CupertinoIcons.book_circle),
                                 Text(
-                                  "Department of Humanity",
+                                  "Department of Finance Studies",
                                   style: GoogleFonts.spaceMono(fontSize: 16),
                                 )
                               ],
                             ),
                             Image.asset(
-                              "./assets/images/help.png",
+                              "./assets/images/digital-wallet.png",
                               height: 30,
                               width: 30,
                             )
@@ -184,7 +184,7 @@ class _DepartmentspageState extends State<Departmentspage> {
                     ),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => HsPage()));
+                          MaterialPageRoute(builder: (context) => BsPage()));
                     },
                   ),
                 ),
@@ -204,13 +204,13 @@ class _DepartmentspageState extends State<Departmentspage> {
                               children: [
                                 Icon(CupertinoIcons.book_circle),
                                 Text(
-                                  "Department of Finance Studies",
+                                  "Department of Humanity",
                                   style: GoogleFonts.spaceMono(fontSize: 16),
                                 )
                               ],
                             ),
                             Image.asset(
-                              "./assets/images/digital-wallet.png",
+                              "./assets/images/help.png",
                               height: 30,
                               width: 30,
                             )
@@ -220,7 +220,7 @@ class _DepartmentspageState extends State<Departmentspage> {
                     ),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => BsPage()));
+                          MaterialPageRoute(builder: (context) => HsPage()));
                     },
                   ),
                 ),
