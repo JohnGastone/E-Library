@@ -116,7 +116,13 @@ class _signUpLectState extends State<signUpLect> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  "And make a better future!",
+                  "And",
+                  style: GoogleFonts.mulish(
+                      fontSize: 35, fontWeight: FontWeight.w500),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  "Prepare a better future!",
                   style: GoogleFonts.mulish(
                       fontSize: 35, fontWeight: FontWeight.w500),
                 ),
@@ -154,7 +160,8 @@ class _signUpLectState extends State<signUpLect> {
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.lock),
                       hintText: "Password",
-                      hintStyle: GoogleFonts.mulish(fontSize: 18),
+                      hintStyle:
+                          GoogleFonts.mulish(fontSize: 18, color: Colors.white),
                       labelStyle: GoogleFonts.mulish(fontSize: 18),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
