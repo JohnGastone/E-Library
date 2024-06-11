@@ -21,8 +21,6 @@ class IntroductionScreen extends StatelessWidget {
             child: CircleAvatar(
               child: Image.asset(
                 "./assets/images/iaaa.png",
-                height: double.maxFinite,
-                width: double.maxFinite,
                 fit: BoxFit.cover,
               ),
             ),
