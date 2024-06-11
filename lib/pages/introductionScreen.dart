@@ -101,7 +101,7 @@ class IntroductionScreen extends StatelessWidget {
                           Row(
                             children: [
                               Text(
-                                "As a student",
+                                "As a Student",
                                 style: GoogleFonts.spaceMono(fontSize: 15),
                               ),
                               SizedBox(
