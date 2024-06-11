@@ -110,13 +110,13 @@ class _signUpLectState extends State<signUpLect> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  "Learning",
+                  "Sharing knowledge",
                   style: GoogleFonts.mulish(
                       fontSize: 35, fontWeight: FontWeight.w500),
                 ),
                 SizedBox(height: 10),
                 Text(
-                  "At your own pace!",
+                  "And make a better future!",
                   style: GoogleFonts.mulish(
                       fontSize: 35, fontWeight: FontWeight.w500),
                 ),
